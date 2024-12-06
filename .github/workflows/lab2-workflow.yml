@@ -51,3 +51,7 @@ jobs:
     steps:
       - name: Printing Custom Message
         run: echo ${{ inputs.custom_message }} #end
+      - name: Printing run-job boolean value
+        if: ${{ inputs.custom_message }}
+        run: echo ${{ inputs.run-job }}
+        

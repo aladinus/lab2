@@ -3,9 +3,9 @@ name: Exploring Workflow Dispatch Trigger
 on:
   workflow_dispatch:
     inputs:
-      run-job:
+      run_job:
         description: "Run Specific Job"
-        required: true
+        required: false
         type: boolean
       custom_message:
         description: "Enter a custom message"
